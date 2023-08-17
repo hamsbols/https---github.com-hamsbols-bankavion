@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Banking App Prototype</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img src="images/MOON-LOGO.png" alt="Logo" class="logo-img" />
+        <span class="logo-text">Lunar Finance</span>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#">Expense Tracker</a></li>
+          <li><a href="#">Logout</a></li>
+        </ul>
+      </nav>
+    </header>
+    <h1>Banking App Prototype</h1>
+    <div id="userForm">
+      <h2>Admin Page</h2>
+      <input type="text" id="userName" placeholder="Enter user name" />
+      <button id="addUserButton">Add User</button>
+    </div>
+    <div id="accountBalance">Account Balance: $0.00</div>
+    <section id="hidden">
+      <button id="depositButton">Deposit</button>
+      <button id="withdrawButton">Withdraw</button>
+    </section>
+
+    <h2>User List</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>User Name</th>
+          <th>User Balance</th>
+          <th>User Passwords</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody id="userTableBody"></tbody>
+    </table>
+    <script src="script.js"></script>
+  </body>
+</html>
